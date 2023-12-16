@@ -21,7 +21,83 @@
     />
   </head>
   <body>
-    <h1>Marwa</h1>
+    <!-- PRELOADER -->
+    <div class="preloader" data-preloader>
+      <div class="preloader-inner">
+        <img
+          src="./assets/images/preloader.svg"
+          width="50"
+          height="50"
+          class="img"
+        />
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header active" data-header>
+      <div class="container">
+        <a href="./index.html" class="logo">
+          <img
+            src="./assets/images/logo.svg"
+            alt="logo"
+            width="187"
+            height="38"
+          />
+        </a>
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="./index.html" class="logo">
+              <img
+                src="./assets/images/logo.svg"
+                alt="logo"
+                width="187"
+                height="38"
+              />
+            </a>
+
+            <button
+              class="nav-toggle-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">About</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">Services</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">Pricing</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="header-action">
+            <a href="#" class="login-btn">Login</a>
+
+            <a href="#" class="btn btn-primary">Sign Up</a>
+          </div>
+        </nav>
+
+        <button class="nav-toggle-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-overlay data-nav-toggler>
+
+        </div>
+      </div>
+    </header>
     <!-- Scripts -->
     <script
       type="module"

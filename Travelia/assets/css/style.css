@@ -165,18 +165,134 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
+.container {
+  padding-inline: 16px;
+}
+
 /*-----------------------------------*\
   #PRELOADER
-\*-----------------------------------*
+\*-----------------------------------**/
 
+.preloader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--bg-lavender-blush);
+  display: grid;
+  place-content: center;
+  z-index: 0;
+  transition: var(--transition-1);
+}
 
+.preloader.remove {
+  visibility: hidden;
+  opacity: 0;
+}
 
+.preloader .img {
+  animation: bounce 800ms ease-in-out infinite alternate;
+}
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.preloader-inner {
+  position: relative;
+}
+
+.preloader-inner::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 10px;
+  background-color: var(--bg-black-alpha-20);
+  filter: blur(4px);
+  z-index: -1;
+  animation: dropShadow 800ms ease-in-out infinite alternate;
+}
+
+@keyframes dropShadow {
+  0% {
+    width: 40%;
+  }
+  100% {
+    width: 80%;
+  }
+}
 
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
+.overlay {
+  display: none;
+}
 
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  padding-block: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+}
+
+.header.active {
+  position: fixed;
+  background-color: var(--bg-white);
+  box-shadow: var(--shadow-1);
+
+  animation: slideIn 500ms ease forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.header.logo img {
+  width: 160px;
+}
+
+.nav-toggle-btn {
+  font-size: 3.2rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-white);
+  position: fixed;
+  top: 0;
+  right: -350px;
+  max-width: 350px;
+  padding: 30px 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  transition: 400ms var(--cubic-out);
+  visibility: hidden;
+}
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
