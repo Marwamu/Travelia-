@@ -1,4 +1,5 @@
 const preloader = document.querySelector("[data-preloader]");
+const menuBtn = document.querySelector("nav-toggle-btn");
 
 window.addEventListener("load", () => {
   preloader.classList.add("remove");
@@ -16,3 +17,11 @@ const addEventOnElements = function (elements, eventType, callback) {
 const navBar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
+
+const toggleNav = function () {
+  navBar.classList.toggle("active");
+  overlay.classList.toggle("active");
+  document.body.classList.toggle("nav-active");
+};
+
+

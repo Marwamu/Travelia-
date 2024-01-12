@@ -160,6 +160,9 @@ body {
   font-size: var(--fontSize-6);
   line-height: 1.8;
 }
+body.nav-active {
+  overflow: hidden;
+}
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -401,7 +404,7 @@ body {
   transition: var(--transition-1);
 }
 
-.overlay.active{
+.overlay.active {
   opacity: 0.5;
   visibility: visible;
 }
