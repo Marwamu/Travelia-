@@ -620,24 +620,23 @@ body.nav-active {
   align-items: center;
 }
 
-.desti-card .card-rating{
+.desti-card .card-rating {
   margin-block-start: 10px;
   gap: 10px;
 }
 
-.desti-card .card-rating .span{
+.desti-card .card-rating .span {
   background-color: var(--bg-sunglow-alpha-10);
   gap: 5px;
   padding: 4px 12px;
   border-radius: var(--radius-pill);
 }
 
-
-.desti-card .card-rating ion-icon{
+.desti-card .card-rating ion-icon {
   color: var(--text-sunglow);
 }
 
-.desti .btn{
+.desti .btn {
   margin-inline: auto;
   margin-block-start: 40px;
 }
@@ -646,33 +645,33 @@ body.nav-active {
   #EXPERIENCE
 \*-----------------------------------*/
 
-.exp .container{
+.exp .container {
   display: grid;
   gap: 50px;
 }
 
-.exp-banner{
+.exp-banner {
   position: relative;
 }
 
-.exp .section-text{
+.exp .section-text {
   margin-block-end: 20px;
 }
 
-.exp-item{
+.exp-item {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-block-start: 15px;
 }
 
-.exp-item .item-title{
-color: var(--text-majorelle-blue);
-font-size: 3.6rem;
-font-weight: var(--weight-bold);
+.exp-item .item-title {
+  color: var(--text-majorelle-blue);
+  font-size: 3.6rem;
+  font-weight: var(--weight-bold);
 }
 
-.exp-shape{
+.exp-shape {
   position: absolute;
   top: 50%;
   left: -10px;
@@ -683,15 +682,15 @@ font-weight: var(--weight-bold);
 /*-----------------------------------*\
   #GALLERY
 \*-----------------------------------*/
-.gallery .section-title{
+.gallery .section-title {
   margin-block-end: 40px;
 }
-.gallery-list{
+.gallery-list {
   display: grid;
   gap: 15px;
 }
 
-.gallery .item-banner{
+.gallery .item-banner {
   border-radius: var(--radius-30);
 }
 
@@ -699,14 +698,14 @@ font-weight: var(--weight-bold);
   #CTA
 
   \*-----------------------------------*/
-.cta-card{
+.cta-card {
   background-color: var(--bg-misty-rose);
   padding: 60px 20px;
   border-radius: var(--radius-30);
   text-align: center;
 }
 
-.cta .section-title .img{
+.cta .section-title .img {
   display: inline-block;
 }
 
@@ -714,17 +713,788 @@ font-weight: var(--weight-bold);
   margin-block: 0 20px;
 }
 
-.cta .btn{
+.cta .btn {
   margin-inline: auto;
   margin-block-start: 20px;
 }
-
-
 
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
 
+.footer-top {
+  display: grid;
+  gap: 40px;
+  padding-block: 60px;
+}
+
+.footer .logo img {
+  width: 180px;
+}
+
+.footer-brand .footer-text {
+  margin-block: 20px;
+}
+
+.social-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.social-link {
+  color: var(--text-majorelle-blue);
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: var(--radius-pill);
+  transition: var(--transition-1);
+}
+
+.social-link:is(:hover, :focus-visible) {
+  color: var(--text-white);
+  background-color: var(--bg-majorelle-blue);
+}
+
+.footer-list-title {
+  color: var(--text-gunmetal);
+  font-size: var(--fontSize-5);
+  font-weight: var(--weight-semiBold);
+  margin-block-end: 15px;
+}
+
+.footer-link {
+  margin-block-start: 10px;
+}
+
+.footer-link:is(:hover, :focus-visible) {
+  color: var(--bg-majorelle-blue);
+}
+
+.footer-list .footer-text {
+  margin-block-end: 15px;
+}
+
+.input-field {
+  height: 55px;
+  padding-inline: 25px 60px;
+  border: 1px solid var(--border-gainsboro);
+  border-radius: var(--radius-pill);
+  color: var(--text-gunmetal);
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-field:focus {
+  border-color: var(--bg-majorelle-blue);
+}
+
+.input-btn {
+  width: 45px;
+  height: 45px;
+  background-color: var(--bg-majorelle-blue);
+  font-size: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-circle);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  transition: var(--transition-1);
+  color: var(--text-white);
+}
+
+.input-btn ion-icon {
+  transform: translateX(-2px) rotate(45deg);
+}
+
+.input-btn:is(:hover, :focus-visible) {
+  background-color: var(--bg-ocean-blue);
+}
+
+.footer-bottom {
+  padding-block: 30px;
+  border-block-start: 1px solid var(--border-gainsboro);
+}
+
+.copyright {
+  margin-block-end: 20px;
+}
+
+.copyright-link {
+  display: inline-block;
+  color: var(--text-majorelle-blue);
+  font-weight: var(--weight-medium);
+}
+
+.footer-bottom-link:is(:hover, :focus-visible) {
+  color: var(--bg-majorelle-blue);
+}
+
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+
+/** 
+* responsive for larger than 575px screen
+*/
+
+@media (min-width: 575px) {
+  /** 
+* REFUSED STYLE 
+*/
+  .container {
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  /** 
+* HEADER
+*/
+
+  .navbar {
+    padding-inline: 40px;
+    padding-block-start: 40px;
+  }
+
+  /** 
+* HERO 
+*/
+
+  .hero-text {
+    max-width: 42ch;
+  }
+
+  .hero .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .hero .btn {
+    margin-block-end: 0;
+  }
+
+  /**
+* SERVICE
+*/
+
+  .service .container {
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+  }
+
+  /**
+* DESTINATION
+*/
+
+  .desti-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /**
+* FOOTER
+*/
+
+  .footer-bottom-list {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+/** 
+* responsive for larger than 768px screen
+*/
+
+@media (min-width: 768px) {
+  /** 
+  * CUSTOM PROPERTY 
+  */
+  :root {
+    /** 
+    * TYPOGRAPHY
+    */
+
+    /* font size */
+    --fontSize-1: 4.8rem;
+    --fontSize-2: 4rem;
+    --fontSize-3: 2.8rem;
+    --fontSize-4: 2.6rem;
+    --fontSize-5: 2.2rem;
+    --fontSize-6: 1.8rem;
+    --fontSize-7: 1.6rem;
+
+    /** 
+    * SPACING
+    */
+
+    --section-spacing: 120px;
+  }
+
+  /** 
+  * REFUSED STYLE
+  */
+
+  .container {
+    max-width: 720px;
+  }
+
+  .btn {
+    height: 60px;
+    padding-inline: 40px;
+  }
+  :is(.desti, .gallery) :is(.section-subtitle, .section-title) {
+    text-align: center;
+  }
+
+  /** 
+  * PRELOAD
+  */
+
+  .preloader .img {
+    width: 80px;
+  }
+
+  /** 
+  * HERO 
+  */
+
+  .hero {
+    padding-block-start: 180px;
+  }
+
+  .hero-subtitle {
+    --fontSize-7: 1.8rem;
+    padding: 10px 30px;
+  }
+
+  .hero-btn {
+    gap: 32px;
+  }
+
+  .hero-btn .btn-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hero-btn ion-icon {
+    padding: 12px;
+  }
+
+  .hero-banner {
+    max-width: 550px;
+    margin-inline: auto;
+  }
+
+  /**
+  * SERVICE
+  */
+
+  .service .container {
+    gap: 35px;
+  }
+
+  .service-card {
+    padding: 40px 30px;
+  }
+
+  .service-card .card-title {
+    margin-block: 20px 10px;
+  }
+
+  /**
+  * DESTINATION
+  */
+
+  .desti .section-title {
+    margin-block-end: 65px;
+  }
+
+  .desti-list {
+    gap: 50px 35px;
+  }
+
+  .desti-card .card-title {
+    margin-block-start: 25px;
+  }
+
+  .desti .btn {
+    margin-block-start: 60px;
+  }
+
+  /**
+  * EXPERIENCE
+  */
+
+  .exp .section-text {
+    max-width: 600px;
+  }
+
+  .exp-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .exp-item {
+    gap: 15px;
+  }
+
+  .exp-item .item-title {
+    font-size: 4rem;
+  }
+
+  .exp-banner {
+    max-width: 550px;
+    margin-inline: auto;
+  }
+
+  /**
+  * GALLERY
+  */
+
+  .gallery .section-title {
+    margin-block-end: 65px;
+  }
+
+  .gallery-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  /** 
+  * CTA
+  */
+
+  .cta-card {
+    padding: 80px 60px;
+  }
+
+  .cta .btn {
+    margin-block-start: 30px;
+  }
+
+  /**
+  * FOOTER
+  */
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .copyright {
+    margin-block-end: 0;
+  }
+}
+
+/** 
+* responsive for larger than 992px screen
+*/
+
+@media (min-width: 992px) {
+  /** 
+  * REFUSED STYLE
+  */
+
+  .container {
+    max-width: 950px;
+  }
+
+  /** 
+  * HEADER
+  */
+
+  .nav-toggle-btn,
+  .navbar-top,
+  .overlay {
+    display: none;
+  }
+
+  .navbar,
+  .navbar.active {
+    all: unset;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .navbar-list {
+    margin-block-start: 0;
+    display: flex;
+    gap: 30px;
+    margin-inline: auto;
+  }
+
+  .navbar-link:is(:hover, :focus-visible, .active) {
+    transform: unset;
+  }
+
+  .navbar-link::before {
+    width: 10px;
+    height: 3px;
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header-action {
+    border: none;
+    padding-block-start: 0;
+    gap: 30px;
+  }
+
+  .header.active {
+    padding-block: 15px;
+  }
+
+  /** 
+  * HERO 
+  */
+
+  .hero .container {
+    grid-template-columns: 0.8fr 1fr;
+    gap: 0;
+    align-items: center;
+  }
+
+  .hero .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .hero-banner {
+    max-width: unset;
+  }
+
+  /**
+  * SERVICE
+  */
+
+  .service .title-wrapper {
+    padding-inline-end: 100px;
+  }
+
+  /**
+  * DESTINATION
+  */
+
+  .desti-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /**
+  * EXPERIENCE
+  */
+
+  .exp .container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .exp-content {
+    order: 1;
+  }
+
+  .exp-list {
+    flex-wrap: wrap;
+  }
+
+  .exp-item {
+    margin-block-start: 0;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+  }
+
+  /**
+  * GALLERY
+  */
+
+  .gallery-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /** 
+  * CTA
+  */
+
+  .cta-card {
+    padding: 80px 60px;
+  }
+
+  .cta .section-title {
+    max-width: 25ch;
+    margin-inline: auto;
+  }
+
+  /**
+  * FOOTER
+  */
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .copyright {
+    margin-block-end: 0;
+  }
+}
+
+/** 
+* responsive for larger than 1200px screen
+*/
+
+@media (min-width: 1200px) {
+  /** 
+  * CUSTOM PROPERTY 
+  */
+  :root {
+    /** 
+    * TYPOGRAPHY
+    */
+
+    /* font size */
+    --fontSize-1: 6.4rem;
+    --fontSize-2: 4.8rem;
+    --fontSize-3: 3rem;
+  }
+
+  /** 
+  * REFUSED STYLE
+  */
+
+  .container {
+    max-width: 1150px;
+  }
+
+  /** 
+  * HEADER
+  */
+
+  .header .logo img {
+    width: 180px;
+  }
+
+  .navbar-list {
+    gap: 50px;
+  }
+
+  .header-action {
+    gap: 40px;
+  }
+
+  .header.active {
+    padding-block: 15px;
+  }
+
+  /** 
+  * HERO 
+  */
+
+  .hero-title {
+    margin-block: 30px;
+  }
+  .hero-text {
+    margin-block-end: 50px;
+  }
+
+  /**
+  * SERVICE
+  */
+
+  .service .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service .title-wrapper {
+    grid-column: span 3;
+  }
+
+  /**
+  * DESTINATION
+  */
+
+  .desti-card .card-price {
+    font-size: 2rem;
+    padding: 8px 20px;
+  }
+
+  .desti-card .card-title {
+    margin-block: 30px;
+  }
+
+  .desti-card .card-rating {
+    margin-block-start: 15px;
+  }
+  /**
+  * EXPERIENCE
+  */
+
+  .exp .section-text {
+    margin-block: 30px 40px;
+  }
+
+  .exp-list {
+    gap: 50px;
+  }
+
+  /** 
+  * CTA
+  */
+
+  .cta-card {
+    padding-block: 150px;
+  }
+
+  /**
+  * FOOTER
+  */
+
+  .footer-top {
+    grid-template-columns: 1fr 0.5fr 0.6fr 0.6fr 1fr;
+    gap: 60px;
+  }
+
+  .footer-brand .footer-text {
+    margin-block: 35px 30px;
+  }
+
+  .footer-list-title {
+    margin-block-end: 25px;
+  }
+
+  .footer-bottom {
+    gap: 40px;
+  }
+}
+
+
+
+/** 
+* responsive for larger than 1400px screen
+*/
+
+@media (min-width: 1400px) {
+  /** 
+  * CUSTOM PROPERTY 
+  */
+  :root {
+    /** 
+    * TYPOGRAPHY
+    */
+
+    /* font size */
+    --fontSize-1: 7.2rem;
+  }
+
+  /** 
+  * REFUSED STYLE
+  */
+
+  .container {
+    max-width: 1350px;
+  }
+
+  /** 
+  * HEADER
+  */
+
+
+  .navbar-list {
+    gap: 70px;
+  }
+
+  /**
+  * SERVICE
+  */
+
+  .service .container{
+    grid-template-columns: 1fr repeat(3, 0.9fr);
+    gap: 50px;
+  }
+  .service .section-title {
+    margin-block-end: 20px;
+  }
+
+  .service .title-wrapper {
+   grid-column: auto ;
+   padding-inline-end: 0;
+  }
+
+  .service-card:nth-child(3){
+    margin-block-start: 80px;
+  }
+
+  /**
+  * DESTINATION
+  */
+
+  .desti-list  {
+    gap: 50px;
+  }
+
+  .desti-card .card-title {
+    margin-block: 30px;
+  }
+
+  .desti-card .card-rating {
+    margin-block-start: 15px;
+  }
+  /**
+  * EXPERIENCE
+  */
+
+  .exp .section-text {
+    margin-block: 30px 40px;
+  }
+
+  .exp-list {
+    gap: 50px;
+  }
+
+  /** 
+  * CTA
+  */
+
+  .cta-card {
+    padding-block: 150px;
+  }
+
+  /**
+  * FOOTER
+  */
+
+  .footer-top {
+    grid-template-columns: 1fr 0.5fr 0.6fr 0.6fr 1fr;
+    gap: 60px;
+  }
+
+  .footer-brand .footer-text {
+    margin-block: 35px 30px;
+  }
+
+  .footer-list-title {
+    margin-block-end: 25px;
+  }
+
+  .footer-bottom {
+    gap: 40px;
+  }
+}
+
